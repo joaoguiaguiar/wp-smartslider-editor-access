@@ -1,4 +1,4 @@
-# 🛡️ Plugin: Institutional Editor Access & UI Hardening
+# 🛡️ Plugin: Institutional Editor 
 
 ## 🎯 Problema Identificado
 Em portais institucionais de larga escala, é comum que usuários com perfil de **Editor** precisem gerenciar banners (Smart Slider 3), menus e widgets. Entretanto, por padrão, o WordPress não concede essas permissões ao Editor ou, quando concede, expõe áreas sensíveis do painel que podem comprometer a segurança ou a integridade do layout.
