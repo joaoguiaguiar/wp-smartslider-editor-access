@@ -16,4 +16,4 @@ Desenvolvi este plugin que implementa uma camada de **Hardening (Endurecimento)*
 - **Propósito:** Demonstração técnica de segurança e gestão de permissões em WordPress.
 - **Refatoração:** Código adaptado para uso seguro e genérico, removendo informações sensíveis.
 - **Propriedade:** Lógica e ativos originais pertencem à instituição.
-- **Restrições:** Proibida comercialização ou redistribuição do código por terceiros
+- **Restrições:** Proibida comercialização ou redistribuição do código por terceiros.
