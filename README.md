@@ -1,19 +1,25 @@
-# Plugin WordPress - Institutional Editor
+# Institutional Editor Hardening
 
-Plugin para controle de permissões do papel Editor em ambientes WordPress institucionais.
+Camada de controle programático de permissões (RBAC) e hardening administrativo para WordPress em ambientes institucionais.
 
 ## Objetivo
 
-Restringir o acesso administrativo, permitindo apenas as funcionalidades necessárias para operação do site.
+Restringir o papel Editor a um conjunto específico de funcionalidades, mantendo isolamento de áreas administrativas sensíveis.
 
-## Características Técnicas
+## Principais Recursos
 
-- Ajuste programático de capabilities (RBAC)
-- Liberação controlada para plugins específicos
-- Remoção de menus e submenus via hooks administrativos
-- Bloqueio do Customizer e do editor de temas
-- Registro de tentativas de acesso a áreas restritas
+- Controle fino de acesso via `user_has_cap`
+- Remoção estratégica de menus e submenus administrativos
+- Bloqueio de acesso direto a páginas sensíveis via URL
+- Hardening da barra administrativa e do Customizer
+- Registro de tentativas de acesso não autorizado
+- Liberação controlada para plugins específicos (ex: Smart Slider)
+- Estrutura modular e reutilizável para outros portais
 
 ## Contexto de Uso
 
-Utilizado em ambientes institucionais que exigem controle de acesso granular no WordPress.
+Aplicado em portais institucionais que exigem restrição de acesso administrativo e manutenção segura do WordPress.
+
+## Nota
+
+Exemplo de uso com Smart Slider, mas a arquitetura permite expansão para outros plugins e funcionalidades.
