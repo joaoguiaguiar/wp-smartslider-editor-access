@@ -1,25 +1,21 @@
 # Institutional Editor Hardening
 
-Camada de controle programático de permissões (RBAC) e hardening administrativo para WordPress em ambientes institucionais.
+Camada programática de controle de permissões para permitir que o papel **Editor** acesse exclusivamente o plugin **Smart Slider** no ambiente administrativo do WordPress.
 
 ## Objetivo
 
-Restringir o papel Editor a um conjunto específico de funcionalidades, mantendo isolamento de áreas administrativas sensíveis.
+Conceder acesso controlado ao **Smart Slider** para usuários com papel **Editor**, sem ampliar privilégios administrativos além do necessário.
 
-## Principais Recursos
+## Implementação
 
-- Controle fino de acesso via `user_has_cap`
-- Remoção estratégica de menus e submenus administrativos
-- Bloqueio de acesso direto a páginas sensíveis via URL
-- Hardening da barra administrativa e do Customizer
-- Registro de tentativas de acesso não autorizado
-- Liberação controlada para plugins específicos (ex: Smart Slider)
-- Estrutura modular e reutilizável para outros portais
+- Interceptação de capacidades via hook `user_has_cap`
+- Liberação específica das capacidades exigidas pelo Smart Slider
+- Manutenção do isolamento das demais áreas administrativas
 
 ## Contexto de Uso
 
-Aplicado em portais institucionais que exigem restrição de acesso administrativo e manutenção segura do WordPress.
+Aplicado em portais institucionais onde o perfil **Editor** precisa gerenciar sliders institucionais, mas não deve possuir permissões administrativas completas.
 
-## Nota
+## Escopo
 
-Exemplo de uso com Smart Slider, mas a arquitetura permite expansão para outros plugins e funcionalidades.
+Este módulo é dedicado exclusivamente à liberação controlada do plugin Smart Slider para o papel Editor.

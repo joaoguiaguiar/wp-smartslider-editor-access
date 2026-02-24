@@ -20,7 +20,9 @@ class INST_Editor_Access_Hardening {
         'edit.php',                    // Posts
         'edit.php?post_type=page',     // Pages
         'themes.php',                  // Appearance Base
-        'admin.php?page=smartslider'   // Smart Slider 3
+        'admin.php?page=smartslider',  // Smart Slider 3
+        'upload.php',                  // Media Library
+        'media-new.php'                // Upload New Media
     ];
 
     // Submenus permitidos dentro de Appearance
@@ -85,7 +87,8 @@ class INST_Editor_Access_Hardening {
             'edit_pages' => true,
             'publish_pages' => true,
             'edit_theme_options' => true,
-            'upload_files' => true
+            'upload_files' => true,
+            'read' => true
         ]);
     }
 
@@ -138,6 +141,7 @@ class INST_Editor_Access_Hardening {
             'users.php',
             'user-new.php',
             'options-general.php'
+            // upload.php e media-new.php são permitidas para o Editor
         ];
 
         if (in_array($pagenow, $bloqueadas)) {
